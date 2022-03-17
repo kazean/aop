@@ -1,0 +1,16 @@
+WithinTest
+
+@Test
+void withinExact()
+@Test
+void withinStar()
+@Test
+void withinSubPackage()
+
+@Test
+@DisplayName("타켓의 타입에만 직접 적용, 인터페이스를 선정하면 안된다.")
+void withinSuperTypeFalse()
+
+@Test
+@DisplayName("execution은 타입 기반, 인터페이스를 선정 가능.")
+void executionSuperTypeTrue()

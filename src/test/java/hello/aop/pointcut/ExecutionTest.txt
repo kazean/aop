@@ -1,0 +1,54 @@
+execution1
+
+ExecutionTest
+-AspectJExpressionPointcut matches MemberServiceImpl
+@Test
+void exactMatch()
+@Test
+void allMatch()
+
+@Test
+void nameMatch()
+@Test
+void nameMatchStar1()
+@Test
+void nameMatchStar2()
+@Test
+void nameMatchFalse()
+
+// declaring-type-pattern?namepattern exactly
+@Test
+void packageExactMatch1()
+@Test
+void packageExactMatch2()
+@Test
+void packageExactMatchFalse()
+@Test
+void packageMatchSubPackage1()
+@Test
+void packageMatchSubPackage2()
+
+execution2
+@Test
+void typeExactMatch() //자식
+@Test
+void typeMatchSuperType() //부모
+@Test
+void typeMatchInternal() //pointcut 자식 > 자식메소드
+@Test
+void typeMatchNoSuperTypeMethodFalse() //부모 > 자식메소드
+
+@Test
+void argsMatch() //파라미터 정확히 하나지정
+@Test
+void argsMatchNoArgs() //파라미터 없는경우
+@Test
+void argsMatchStar() //하나의 파라미터
+@Test
+void argsMatchAll() //모든것 매칭
+@Test
+void argsMatchComplex() //String 외 0~n
+
+
+
+
