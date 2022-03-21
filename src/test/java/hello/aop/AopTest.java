@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
 
+import static org.assertj.core.api.Assertions.*;
+
 @Slf4j
 //@Import(AspectV1.class)
 //@Import(AspectV2.class)
@@ -39,7 +41,7 @@ public class AopTest {
 
     @Test
     void exception(){
-        Assertions.assertThatThrownBy(() -> orderService.orderItem("ex"))
+        assertThatThrownBy(() -> orderService.orderItem("ex"))
                 .isInstanceOf(IllegalStateException.class);
     }
 }
